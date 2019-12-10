@@ -23,8 +23,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("Starting the server on :8080")
-	http.ListenAndServe(":8080", yamlHandler)
+	fmt.Println("Starting the server on :8888")
+	err1 := http.ListenAndServe(":8888", yamlHandler)
+	if err1 != nil {
+		panic(err1)
+	}
 }
 
 func defaultMux() *http.ServeMux {
