@@ -1,1 +1,3 @@
-# urlshort
+# About
+
+Credit: https://gophercises.com
